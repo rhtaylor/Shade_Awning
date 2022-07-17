@@ -1,0 +1,42 @@
+$small: 360px;
+$medium: 700px;
+$large: 2000px;
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @media screen and (min-width: $medium) and (max-width:  $large) {
+        .s{display: none;} 
+        .m{display: none;}
+    }
+}
+.arizona_sun{
+    background: url('/pictures/four-horse-stalls.jpg') no-repeat center center fixed; ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+.az_sun{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100;
+} 
+
+.l{
+
+}
+.s{
+    
+}
