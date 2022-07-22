@@ -34,9 +34,13 @@ footer{
     width: 100;
 } 
 
-.l{
-
-}
-.s{
-    
+.cus-height{
+    display: flexbox; 
+    flex-direction: row;
+    max-height: 50px !important;
+    min-height: 25px !important;
+} 
+.ig{
+    width: 40%;
+    height: auto;
 }
