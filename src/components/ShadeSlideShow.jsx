@@ -20,8 +20,8 @@ const ShadeSlideShow = ()=>{
     
  
     return(
-            <Row className="pt-4 h-10 ig">
-            <div className='d-inline-flex pg-4  h-25  justify-content-center align-content-center cus-height'>
+            <Row className="d-grid pt-4 h-10 ig mr-0 pr-0">
+            <div className='pb-4  h-25  justify-content-center align-content-center'>
          <ImageGallery items={slideImages} autoPlay={true} originalHeight={{"height": "10%"}} sizes={{"height": "50%", "width": "50%"}}/>
             </div> 
           </Row>)

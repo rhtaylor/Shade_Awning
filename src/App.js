@@ -20,29 +20,36 @@ function App() {
     <div className="App">
       <header className="arizona_sun">
         <p>&nbsp;</p>
-        <h1>Ok Corrals Shade & Awning</h1>
+        <h1>Ok-Corrals Shade & Awning</h1>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
+        <br/>
       </header>
-      <h1 className='az_sun l'>We build Horse Shade Awnings Car Ports Shed Rows</h1>
+      <h1 className='az_sun l'>We build Barn, Horse Shade, Awning, Car Port, Shed Rows</h1>
         <h1 className='az_sun s'>We build the best Horse Shade, Awnings, Car Ports</h1>
-        <div className='d-flex flex-row h-25 justify-content-center align-content-center cus-height'>
+        <div className='h-25 justify-content-center cus-height'>
+        {/* <div className=''>
         <nav
         style={{
-          borderBottom: "solid 1px",
-          paddingBottom: "1rem",
-          display: 'flex',
+          marginLeft: '46%',
           justifyContent: 'center',
-
         }}
       >
         <Link to="/Pictures">
-        <Button color="secondary" class="btn btn-dark btn-lg">Pictures</Button>
+        <Button color="secondary" className="btn btn-dark btn-lg">Pictures</Button>
         </Link>
       </nav>
-        
-        </div>
-      <div id="amzn-assoc-ad-1f361c40-8ba6-4a7a-8565-10cf2fe80411"></div> 
+      </div> */}
+      <div className='align-content-end justify-content-center'>
+        <br/>
+      <h1 className='d-flex justify-content-center'>Installed in arizona within a month</h1>
+      <h3 className='d-flex justify-content-center'>520-730-7020</h3>
+      <a className='d-flex justify-content-center' href='http://ok-corrals.com/' target="_blank">OK-Corrals, llc</a>
+      <p className='d-flex justify-content-center'>*purcahse Awnings off this page and we will add it to your Ok-Corral, llc structure!</p>
+      </div>
+      </div>
+      <ShadeSlideShow />
+      <div className="mt-4 pt-5" id="amzn-assoc-ad-1f361c40-8ba6-4a7a-8565-10cf2fe80411"></div> 
       <div id="amzn-assoc-ad-a5eb903a-db86-480d-9650-53acb6a6b4e9"></div>
       <footer>
         <h6 className="az_sun">Ok Corrals, llc</h6>
