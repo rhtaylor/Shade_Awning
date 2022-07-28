@@ -19,10 +19,10 @@ function App() {
   return (
     <div className="App">
       <header className="arizona_sun">
-        <p>&nbsp;</p>
+        <p className='l'>&nbsp;</p>
         <h1>Ok-Corrals Shade & Awning</h1>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
+        <p className='l'>&nbsp;</p>
+        <p className='l'>&nbsp;</p>
         <br/>
       </header>
       <h1 className='az_sun l'>We build Barn, Horse Shade, Awning, Car Port, Shed Rows</h1>

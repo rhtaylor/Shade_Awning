@@ -22,11 +22,13 @@ body{
     justify-content: center;
     color: white;
     border-radius: 25px;
+    
 }
 .az_sun{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 footer{
     display: flex;
@@ -34,12 +36,28 @@ footer{
     justify-content: center;
     width: 100;
 } 
-
-.cus-height{
-    
-} 
 .ig{
     width: 20%;
     height: auto;
     margin-left: 36% !important;
+}
+@media only screen and (min-width: $small) and (max-width: $medium){
+    .l{display: none !important;}
+    .arizona_sun{
+        background: url('/pictures/four-horse-stalls.jpg') no-repeat top center fixed; ;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: 100%;
+        display: flex; 
+        flex-direction: row;}
+    .horse-shade{
+        margin-left: 0px !important;
+        padding-left: 0% !important; 
+    } 
+    .ig{
+        margin-left: 16% !important;
+
+    }
+
 }
