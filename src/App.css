@@ -17,3 +17,7 @@
 .App-link {
   color: #61dafb;
 }
+
+#root{
+  width: 100% !important;
+}

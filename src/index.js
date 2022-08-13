@@ -7,12 +7,14 @@ import ShadeSlideShow from './components/ShadeSlideShow'
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import "react-image-gallery/styles/css/image-gallery.css";
+import FullShadeInstalledGallery from './components/FullShadeInstalledGallery';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
   <Routes>
     <Route path='/' element={<App/>}/>
-    <Route path='/pictures' element={<ShadeSlideShow />} />
+   
+    <Route path='/FullShadeInstalledGallery' element={<FullShadeInstalledGallery />} />
   </Routes>
   </BrowserRouter>
 );

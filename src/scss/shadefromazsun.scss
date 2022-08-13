@@ -1,6 +1,8 @@
 $small: 360px;
 $medium: 700px;
 $large: 2000px;
+$rustic:"../pictures/rustic.jpg";
+$cpanel:"../pictures/cpanel.jpg";
 body{
     display: flex;
     justify-content: center;
@@ -37,9 +39,12 @@ footer{
     width: 100;
 } 
 .ig{
-    width: 20%;
+    width: 25%;
     height: auto;
-    margin-left: 36% !important;
+    margin-left: 38% !important;
+}
+.shady{
+    margin: 0% !important;
 }
 @media only screen and (min-width: $small) and (max-width: $medium){
     .l{display: none !important;}
@@ -52,12 +57,71 @@ footer{
         display: flex; 
         flex-direction: row;}
     .horse-shade{
-        margin-left: 0px !important;
-        padding-left: 0% !important; 
-    } 
+        margin-left: 12% !important;
+        padding-left: 3% !important;
+        padding-right: 12% !important;
+    }
     .ig{
-        margin-left: 16% !important;
+        margin-left: 10% !important;
 
     }
 
+    .shady{
+        margin-left: 33% !important;
+        padding-left: 0% !important;
+    } 
+    .resize{
+        width: 200px !important; 
+        height: auto;
+        margin-left: auto !important;
+    }
+    .image-gallery {
+        width: 110%;
+        height: auto;
+    }
+    
+    .image-gallery-slide img {
+        width: 100%;
+        height: auto;
+        max-height: 90vh;
+        object-fit: cover;
+        overflow: hidden;
+        object-position: center center;
+    }
+    
+    .fullscreen .image-gallery-slide img {
+        max-height: 100vh;
+    } 
+    .mScreen{
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center !important;
+        margin-left: 26px !important;
+        margin-right: 0% !important;   
+    } 
+    #m-l{
+        margin-left: 0% !important;
+        margin-right: 50% !important;
+    }
+}
+.AzHorseShade{
+    background-image: url($rustic)
+} 
+.horse_shade_roof{
+    background-image: url($cpanel);
+    background-repeat: repeat;
+    background-size: auto;
+    height: auto;
+    max-height: 60vh;
+    overflow: hidden;
+    @media only screen and (min-width: $small) and (max-width: $medium){ 
+     
+    }
+
+} 
+div.App{
+    background-image: url($cpanel);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 200px;
 }
