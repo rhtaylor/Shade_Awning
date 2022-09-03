@@ -4,6 +4,7 @@ import { Row, Col } from 'reactstrap';
 import { useNavigate } from "react-router-dom";
 import Gallery from 'react-photo-gallery'
 import "react-image-gallery/styles/css/image-gallery.css";
+import '../scss/shadefromazsun.scss'
 import fourHorseStalls from '../pictures/four-horse-stalls.jpg'
 import fourHorseStallsThumb from '../pictures/four-horse-stalls-thumb.jpg'
 import horseAndBarn from '../pictures/horse-next-to-shade.jpg'
@@ -44,6 +45,7 @@ const ShadeGallery = [    {original: HorseShadeGilbert, thumbnail: HorseShadeGil
     ]
     
 const FullShadeInstalledGallery=()=>{
+    
     useEffect(()=>{
         const script = document.createElement('script');
         script.src = "//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"
@@ -65,9 +67,11 @@ const FullShadeInstalledGallery=()=>{
     const back = () =>{
         nav(-1)
     }
-    return(<Row className="d-flex justify-content-center">
+    return(<Row className="d-flex justify-content-center az_gravel">
             <Col className="w-100 h-75 mt-5">
-                <div className="w-100 flex-column">
+                <div className="w-100 flex-row">
+                <h1 className="text-center">Shade Installed in AZ</h1>
+                <p className="text-center text-warning">some of the 1000s of shade already installed around Arizona</p>
                 <Button className="w-100 m-auto justify-content-center mScreen" onClick={back}>Back</Button>
                 <ImageGallery autoPlay={true}
                 thumbnailPosition="top"

@@ -3,9 +3,14 @@ $medium: 700px;
 $large: 2000px;
 $rustic:"../pictures/rustic.jpg";
 $cpanel:"../pictures/cpanel.jpg";
+$gravel:"../pictures/az_dirt.jpg";
+$sun:"../pictures/HighSun.jpg";
 body{
     display: flex;
     justify-content: center;
+    .shadow{
+        text-shadow:  #FC0 1px 0 10px;;
+    }
     @media screen and (min-width: $medium) and (max-width:  $large) {
         .s{display: none;} 
         .m{display: none;}
@@ -49,7 +54,7 @@ footer{
 @media only screen and (min-width: $small) and (max-width: $medium){
     .l{display: none !important;}
     .arizona_sun{
-        background: url('/pictures/four-horse-stalls.jpg') no-repeat top center fixed; ;
+        background: url('/pictures/four-horse-stalls.jpg') no-repeat top center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -79,7 +84,13 @@ footer{
         width: 110%;
         height: auto;
     }
-    
+    .contact_nav_bar{
+        flex-direction: row !important;
+        align-items: center;
+        a{
+            margin: 0% !important;
+        }
+    }
     .image-gallery-slide img {
         width: 100%;
         height: auto;
@@ -105,7 +116,7 @@ footer{
     }
 }
 .AzHorseShade{
-    background-image: url($rustic)
+    background-image: url($rustic) !important;
 } 
 .horse_shade_roof{
     background-image: url($cpanel);
@@ -124,4 +135,53 @@ div.App{
     background-repeat: repeat;
     background-position: center;
     background-size: 200px;
+} 
+.az_gravel{
+    background: url($gravel) no-repeat bottom center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: auto !important;
+    height: 100vh !important; 
+}
+.az_sunny{
+    background: url($sun) no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: auto !important;
+    height: 100vh !important; 
+    @media only screen and (min-width: $small) and (max-width: $medium){
+        background: url($sun) no-repeat top right fixed;
+        width: 100vh !important; 
+        height: auto !important;
+
+        display: flex;
+        flex-direction: column !important;
+        .targetSmall{
+            display: block !important;
+            
+        } 
+        .smaller{
+            width: 300px !important; 
+            height: auto !important;
+        }
+        .l{
+            margin-left: 15px !important; 
+            padding-left: 0% !important;
+        }
+    }
+}
+
+header {
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    font-size: 5rem;
+    text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.342);
+}
+
+.contact{
+    height: 35vh;
+    background-image:  linear-gradient(to right, rgba(54, 214, 62, 0.794), rgba(53, 201, 157, 0.794), rgba(32, 155, 212, 0.794)),url("../pictures/10X20-Shade-4Rail-Stalls.jpg");
+    background-position: center;
 }
